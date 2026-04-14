@@ -3,20 +3,21 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, UtensilsCrossed } from 'lucide-react';
 import { cn } from '../lib/utils';
-
-const NAV_LINKS = [
-  { name: 'Home', path: '/' },
-  { name: 'Menu', path: '/menu' },
-  { name: 'Gallery', path: '/gallery' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Events', path: '/events' },
-  { name: 'Contact', path: '/contact' },
-];
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
+
+  const navLinks = t<Array<{ name: string; path: string }>>('navbar.links');
+  const reserve = t<string>('navbar.reserve');
+  const reserveTable = t<string>('navbar.reserveTable');
+  const openMenu = t<string>('navbar.openMenu');
+  const closeMenu = t<string>('navbar.closeMenu');
+  const brand = t<string>('meta.brand');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,13 +42,13 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-2 group">
           <UtensilsCrossed className="w-8 h-8 text-gold group-hover:rotate-12 transition-transform" />
           <span className="text-2xl font-serif font-bold tracking-widest text-gold-gradient uppercase">
-            Lumière
+            {brand}
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map((link) => (
+        <div className="hidden md:flex items-center gap-6">
+          {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
@@ -59,11 +60,12 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+          <LanguageSwitcher />
           <Link
             to="/contact"
             className="px-6 py-2 border border-gold text-gold text-xs uppercase tracking-[0.2em] hover:bg-gold hover:text-midnight transition-all duration-300"
           >
-            Reserve
+            {reserve}
           </Link>
         </div>
 
@@ -71,6 +73,9 @@ export default function Navbar() {
         <button
           className="md:hidden text-white p-2"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? closeMenu : openMenu}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen ? <X /> : <Menu />}
         </button>
@@ -83,10 +88,12 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
+            id="mobile-navigation"
             className="absolute top-full left-0 right-0 glass border-t border-white/10 md:hidden overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
-              {NAV_LINKS.map((link) => (
+              <LanguageSwitcher mobile />
+              {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
@@ -102,7 +109,7 @@ export default function Navbar() {
                 to="/contact"
                 className="mt-4 w-full py-3 bg-gold text-midnight text-center uppercase tracking-widest font-bold"
               >
-                Reserve a Table
+                {reserveTable}
               </Link>
             </div>
           </motion.div>

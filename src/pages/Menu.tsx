@@ -1,34 +1,43 @@
 import { motion } from 'motion/react';
-import { MENU_ITEMS } from '../constants';
-
-const CATEGORIES = ['Appetizers', 'Main Course', 'Desserts', 'Wines'] as const;
+import { MENU_ITEM_IMAGES } from '../constants';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Menu() {
+  const { t } = useLanguage();
+
+  const page = t<{
+    eyebrow: string;
+    title: string;
+    description: string;
+    emptyCategory: string;
+    wine: { title: string; description: string; button: string };
+    categories: Array<{
+      key: string;
+      label: string;
+      items: Array<{ id: string; name: string; description: string; price: string }>;
+    }>;
+  }>('menuPage');
+
   return (
     <div className="pt-32 pb-20">
       <header className="text-center mb-20 px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <span className="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block">The Selection</span>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">Our Menu</h1>
-          <p className="text-white/50 max-w-2xl mx-auto font-light italic">
-            "A curated collection of culinary masterpieces, crafted with passion and precision."
-          </p>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+          <span className="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block">{page.eyebrow}</span>
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">{page.title}</h1>
+          <p className="text-white/50 max-w-2xl mx-auto font-light italic">"{page.description}"</p>
         </motion.div>
       </header>
 
       <div className="max-w-5xl mx-auto px-6 space-y-32">
-        {CATEGORIES.map((category) => (
-          <section key={category}>
+        {page.categories.map((category) => (
+          <section key={category.key}>
             <div className="flex items-center gap-8 mb-12">
-              <h2 className="text-3xl font-serif font-bold text-gold shrink-0">{category}</h2>
+              <h2 className="text-3xl font-serif font-bold text-gold shrink-0">{category.label}</h2>
               <div className="h-px w-full bg-linear-to-r from-gold/30 to-transparent" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-              {MENU_ITEMS.filter(item => item.category === category).map((item) => (
+              {category.items.map((item) => (
                 <motion.div
                   key={item.id}
                   initial={{ opacity: 0, x: -20 }}
@@ -38,7 +47,7 @@ export default function Menu() {
                 >
                   <div className="w-24 h-24 shrink-0 overflow-hidden rounded-lg border border-white/10">
                     <img
-                      src={item.image}
+                      src={MENU_ITEM_IMAGES[item.id]}
                       alt={item.name}
                       className="w-full h-full object-cover transition-transform group-hover:scale-110"
                       referrerPolicy="no-referrer"
@@ -53,23 +62,19 @@ export default function Menu() {
                   </div>
                 </motion.div>
               ))}
-              {/* Fallback items if category is empty in constants */}
-              {MENU_ITEMS.filter(item => item.category === category).length === 0 && (
-                <p className="text-white/20 italic text-sm">Seasonal selections coming soon...</p>
+              {category.items.length === 0 && (
+                <p className="text-white/20 italic text-sm">{page.emptyCategory}</p>
               )}
             </div>
           </section>
         ))}
       </div>
 
-      {/* Wine List CTA */}
       <section className="mt-32 bg-midnight-light py-20 text-center px-6 border-y border-white/5">
-        <h2 className="text-3xl font-serif font-bold mb-6">The Wine Cellar</h2>
-        <p className="text-white/50 max-w-xl mx-auto mb-10 font-light">
-          Our sommelier has curated an extensive collection of vintage wines from the world's most prestigious vineyards.
-        </p>
+        <h2 className="text-3xl font-serif font-bold mb-6">{page.wine.title}</h2>
+        <p className="text-white/50 max-w-xl mx-auto mb-10 font-light">{page.wine.description}</p>
         <button className="px-10 py-4 border border-gold text-gold uppercase tracking-widest text-xs font-bold hover:bg-gold hover:text-midnight transition-all">
-          Download Wine List (PDF)
+          {page.wine.button}
         </button>
       </section>
     </div>

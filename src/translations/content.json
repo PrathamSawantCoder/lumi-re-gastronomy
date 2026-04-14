@@ -1,0 +1,528 @@
+{
+  "en": {
+    "meta": {
+      "siteName": "Lumière Gastronomy",
+      "brand": "PRAADA"
+    },
+    "navbar": {
+      "links": [
+        { "name": "Home", "path": "/" },
+        { "name": "Menu", "path": "/menu" },
+        { "name": "Gallery", "path": "/gallery" },
+        { "name": "Blog", "path": "/blog" },
+        { "name": "Events", "path": "/events" },
+        { "name": "Contact", "path": "/contact" }
+      ],
+      "reserve": "Reserve",
+      "reserveTable": "Reserve a Table",
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu"
+    },
+    "languageSwitcher": {
+      "label": "Switch language",
+      "english": "English",
+      "finnish": "Finnish",
+      "shortEnglish": "EN",
+      "shortFinnish": "FI"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "Est. 2026",
+        "titleLineOne": "Culinary Art",
+        "titleAccent": "Redefined",
+        "description": "Experience a symphony of flavors where tradition meets innovation in the heart of the city.",
+        "primaryCta": "Explore Menu",
+        "secondaryCta": "Book a Table",
+        "scroll": "Scroll",
+        "heroAlt": "Hero Background"
+      },
+      "featured": {
+        "eyebrow": "Chef's Selection",
+        "title": "Signature Creations",
+        "cta": "View Full Menu"
+      },
+      "experience": {
+        "eyebrow": "The Experience",
+        "titleLineOne": "A Sanctuary for the",
+        "titleAccent": "Modern Epicurean",
+        "description": "At Praada, we believe dining is more than just a meal—it's a sensory journey. From the soft glow of our ambient lighting to the meticulous plating of every dish, we've designed every detail to transport you to a world of refined elegance.",
+        "imageAlt": "Ambiance",
+        "features": [
+          { "title": "Michelin Quality", "description": "Excellence in every bite" },
+          { "title": "Seasonal Menu", "description": "Freshness guaranteed" }
+        ]
+      },
+      "info": {
+        "visitUs": "Visit Us",
+        "openingHours": "Opening Hours",
+        "reservations": "Reservations",
+        "address": "Lansikatu, Joensuu-80100",
+        "hours": "Mon - Sun: 5:00 PM - 11:00 PM",
+        "phone": "+1 (555) 123-4567"
+      }
+    },
+    "menuPage": {
+      "eyebrow": "The Selection",
+      "title": "Our Menu",
+      "description": "A curated collection of culinary masterpieces, crafted with passion and precision.",
+      "emptyCategory": "Seasonal selections coming soon...",
+      "wine": {
+        "title": "The Wine Cellar",
+        "description": "Our sommelier has curated an extensive collection of vintage wines from the world's most prestigious vineyards.",
+        "button": "Download Wine List (PDF)"
+      },
+      "categories": [
+        {
+          "key": "appetizers",
+          "label": "Appetizers",
+          "items": [
+            {
+              "id": "2",
+              "name": "Pan-Seared Scallops",
+              "description": "Hokkaido scallops with pea purée, crispy pancetta, and lemon zest.",
+              "price": "$28"
+            }
+          ]
+        },
+        {
+          "key": "main-course",
+          "label": "Main Course",
+          "items": [
+            {
+              "id": "1",
+              "name": "Truffle Infused Risotto",
+              "description": "Arborio rice slow-cooked with wild mushrooms and fresh black truffle shavings.",
+              "price": "$34"
+            },
+            {
+              "id": "3",
+              "name": "Wagyu Ribeye",
+              "description": "A5 Wagyu beef served with roasted root vegetables and red wine reduction.",
+              "price": "$85"
+            }
+          ]
+        },
+        {
+          "key": "desserts",
+          "label": "Desserts",
+          "items": [
+            {
+              "id": "4",
+              "name": "Deconstructed Lemon Tart",
+              "description": "Zesty lemon curd, butter shortbread crumble, and toasted meringue.",
+              "price": "$16"
+            }
+          ]
+        },
+        {
+          "key": "wines",
+          "label": "Wines",
+          "items": []
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Visual Journey",
+      "title": "The Gallery",
+      "follow": "Follow our story",
+      "instagramHandle": "@LumiereGastronomy",
+      "categories": [
+        { "key": "all", "label": "All" },
+        { "key": "dishes", "label": "Dishes" },
+        { "key": "ambiance", "label": "Ambiance" },
+        { "key": "kitchen", "label": "Kitchen" }
+      ],
+      "images": [
+        { "id": "1", "alt": "Cocktail being poured", "category": "ambiance" },
+        { "id": "2", "alt": "Elegant dining room", "category": "ambiance" },
+        { "id": "3", "alt": "Chef plating a dish", "category": "kitchen" },
+        { "id": "4", "alt": "Grilled steak", "category": "dishes" },
+        { "id": "5", "alt": "Dessert close-up", "category": "dishes" },
+        { "id": "6", "alt": "Restaurant exterior", "category": "ambiance" }
+      ]
+    },
+    "blog": {
+      "eyebrow": "Culinary Stories",
+      "title": "The Chef's Table",
+      "description": "Insights from our kitchen, seasonal recipes, and a behind-the-scenes look at the art of gastronomy.",
+      "readMore": "Read Full Story",
+      "newsletter": {
+        "title": "Join the Inner Circle",
+        "description": "Subscribe to receive exclusive recipes, early access to seasonal menus, and invitations to private tasting events.",
+        "placeholder": "Your email address",
+        "button": "Subscribe"
+      },
+      "posts": [
+        {
+          "id": "1",
+          "title": "The Secret to Perfect Risotto",
+          "excerpt": "Chef Julian shares the three golden rules for achieving that creamy, velvety texture every time.",
+          "author": "Chef Julian Rossi",
+          "date": "April 10, 2026",
+          "category": "Recipe"
+        },
+        {
+          "id": "2",
+          "title": "Spring Harvest: New Seasonal Menu",
+          "excerpt": "Discover the fresh ingredients and vibrant flavors arriving at Lumière this season.",
+          "author": "Elena Vance",
+          "date": "April 5, 2026",
+          "category": "News"
+        }
+      ]
+    },
+    "events": {
+      "eyebrow": "Exclusive Gatherings",
+      "title": "Events & Private Dining",
+      "description": "From intimate celebrations to corporate galas, we provide the perfect backdrop for your most memorable moments.",
+      "sapphire": {
+        "title": "The Sapphire Room",
+        "description": "Our premier private dining space, The Sapphire Room, offers complete seclusion for up to 20 guests. Featuring a dedicated service team, a custom-built mahogany table, and integrated audiovisual capabilities.",
+        "button": "Inquire Now",
+        "quote": "The ultimate in exclusivity.",
+        "imageAlt": "Private Dining Room",
+        "features": ["Capacity: 12-20 Guests", "Dedicated Sommelier", "Custom Playlist Integration"]
+      },
+      "grand": {
+        "title": "Grand Occasions",
+        "description": "For larger celebrations, Lumière Gastronomy is available for full restaurant buyouts. We can accommodate up to 120 guests for a seated dinner or 200 for a cocktail reception.",
+        "button": "View Event Brochure",
+        "imageAlt": "Full Restaurant Buyout",
+        "cards": [
+          { "title": "Weddings", "description": "Elegant ceremonies & receptions" },
+          { "title": "Corporate", "description": "Product launches & galas" }
+        ]
+      },
+      "testimonial": {
+        "quote": "Lumière Gastronomy hosted our corporate gala, and the attention to detail was unparalleled. The food, the service, and the ambiance were all world-class.",
+        "name": "Sarah Jenkins",
+        "role": "Global Events Director, Sdr Tech"
+      }
+    },
+    "contact": {
+      "eyebrow": "Get in Touch",
+      "title": "Contact Us",
+      "description": "Whether you have a question about our menu, want to book a private event, or simply want to say hello, we'd love to hear from you.",
+      "sections": {
+        "location": "Location",
+        "phone": "Phone",
+        "email": "Email",
+        "hours": "Hours"
+      },
+      "details": {
+        "address": "Lansikatu, Joensuu-80100",
+        "phones": ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+        "emails": ["hello@lumiere.com", "events@lumiere.com"],
+        "hours": "Mon - Sun: 5:00 PM - 11:00 PM",
+        "mapAlt": "Map Placeholder",
+        "mapCta": "View on Google Maps"
+      },
+      "form": {
+        "title": "Send a Message",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "john@example.com",
+        "subjectLabel": "Subject",
+        "subjectOptions": ["General Inquiry", "Table Reservation", "Private Event", "Career Opportunities"],
+        "messageLabel": "Message",
+        "messagePlaceholder": "How can we help you?",
+        "button": "Send Message"
+      }
+    },
+    "footer": {
+      "description": "Crafting unforgettable culinary moments through artisanal techniques and the finest seasonal ingredients.",
+      "quickLinks": "Quick Links",
+      "menu": "The Menu",
+      "gallery": "Gallery",
+      "blog": "Chef's Blog",
+      "events": "Private Dining",
+      "hours": "Hours",
+      "location": "Location",
+      "schedule": [
+        { "day": "Mon - Thu", "time": "17:00 - 22:00" },
+        { "day": "Fri - Sat", "time": "17:00 - 23:30" },
+        { "day": "Sunday", "time": "12:00 - 21:00" }
+      ],
+      "address": "Lansikatu\nJoensuu-80100",
+      "phone": "+1 (555) 123-4567",
+      "email": "reservations@lumiere.com",
+      "copyright": "© 2026 Lumière Gastronomy. All Rights Reserved."
+    },
+    "ai": {
+      "systemPrompt": "You are the Lumière Gastronomy AI Concierge. Your goal is to help guests with information about the restaurant and assist with table reservations. Restaurant Info: - Name: Lumière Gastronomy - Cuisine: Modern French / Artisanal - Location: Lansikatu, Joensuu-80100 - Signature Dishes: Truffle Infused Risotto, Pan-Seared Scallops, Wagyu Ribeye. - Hours: Mon-Thu 5pm-10pm, Fri-Sat 5pm-11:30pm, Sun 12pm-9pm. - Reservations: We take reservations for parties up to 10 people. - Dress Code: Smart Casual / Formal. When a user wants to reserve: 1. Ask for the date and time. 2. Ask for the number of guests. 3. Ask for a name and contact info. 4. Confirm the details (simulated). Be elegant, professional, and welcoming. Use sophisticated language.",
+      "notConfigured": "The AI concierge is not configured yet. Add `VITE_OPENROUTER_API_KEY` to your environment variables.",
+      "processingError": "I apologize, I'm having trouble processing that request.",
+      "resting": "I'm sorry, I'm currently resting. Please try again later.",
+      "title": "Lumière Concierge",
+      "subtitle": "Always at your service",
+      "welcome": "Welcome to Lumière Gastronomy. How may I assist you with your dining experience today?",
+      "placeholder": "Ask about reservations or menu...",
+      "open": "Open AI concierge",
+      "close": "Close AI concierge"
+    }
+  },
+  "fi": {
+    "meta": {
+      "siteName": "Lumière Gastronomy",
+      "brand": "PRAADA"
+    },
+    "navbar": {
+      "links": [
+        { "name": "Etusivu", "path": "/" },
+        { "name": "Menu", "path": "/menu" },
+        { "name": "Galleria", "path": "/gallery" },
+        { "name": "Blogi", "path": "/blog" },
+        { "name": "Tapahtumat", "path": "/events" },
+        { "name": "Yhteystiedot", "path": "/contact" }
+      ],
+      "reserve": "Varaa",
+      "reserveTable": "Varaa pöytä",
+      "openMenu": "Avaa navigointivalikko",
+      "closeMenu": "Sulje navigointivalikko"
+    },
+    "languageSwitcher": {
+      "label": "Vaihda kieli",
+      "english": "Englanti",
+      "finnish": "Suomi",
+      "shortEnglish": "EN",
+      "shortFinnish": "FI"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "Perustettu 2026",
+        "titleLineOne": "Kulinaristinen taide",
+        "titleAccent": "uudelleenmääriteltynä",
+        "description": "Koe makujen sinfonia, jossa perinne kohtaa innovaation kaupungin sydämessä.",
+        "primaryCta": "Tutustu menuun",
+        "secondaryCta": "Varaa pöytä",
+        "scroll": "Vieritä",
+        "heroAlt": "Pääkuva"
+      },
+      "featured": {
+        "eyebrow": "Keittiömestarin valinnat",
+        "title": "Tunnusomaiset luomukset",
+        "cta": "Katso koko menu"
+      },
+      "experience": {
+        "eyebrow": "Elämys",
+        "titleLineOne": "Turvapaikka",
+        "titleAccent": "modernille herkkusuulle",
+        "description": "Praadassa uskomme, että ruokailu on enemmän kuin ateria — se on aistillinen matka. Pehmeästä tunnelmavalaistuksesta jokaisen annoksen huolelliseen esillepanoon, jokainen yksityiskohta on suunniteltu viemään sinut hienostuneen eleganssin maailmaan.",
+        "imageAlt": "Tunnelma",
+        "features": [
+          { "title": "Michelin-taso", "description": "Erinomaisuutta jokaisessa suupalassa" },
+          { "title": "Sesonkimenu", "description": "Tuoreus taattu" }
+        ]
+      },
+      "info": {
+        "visitUs": "Vieraile luonamme",
+        "openingHours": "Aukioloajat",
+        "reservations": "Varaukset",
+        "address": "Lansikatu, Joensuu-80100",
+        "hours": "Ma - Su: 17.00 - 23.00",
+        "phone": "+1 (555) 123-4567"
+      }
+    },
+    "menuPage": {
+      "eyebrow": "Valikoima",
+      "title": "Menumme",
+      "description": "Huolella kuratoitu kokoelma kulinaristisia mestariteoksia, valmistettuna intohimolla ja tarkkuudella.",
+      "emptyCategory": "Sesongin valikoima tulossa pian...",
+      "wine": {
+        "title": "Viinikellari",
+        "description": "Sommelierimme on koonnut laajan kokoelman vuosikertaviinejä maailman arvostetuimmilta viinitarhoilta.",
+        "button": "Lataa viinilista (PDF)"
+      },
+      "categories": [
+        {
+          "key": "appetizers",
+          "label": "Alkuruoat",
+          "items": [
+            {
+              "id": "2",
+              "name": "Paistetut kampasimpukat",
+              "description": "Hokkaidon kampasimpukoita hernesoseella, rapealla pancettalla ja sitruunankuorella.",
+              "price": "$28"
+            }
+          ]
+        },
+        {
+          "key": "main-course",
+          "label": "Pääruoat",
+          "items": [
+            {
+              "id": "1",
+              "name": "Tryffelirisotto",
+              "description": "Arborio-riisiä hitaasti kypsennettynä metsäsienten ja tuoreiden mustien tryffelilastujen kanssa.",
+              "price": "$34"
+            },
+            {
+              "id": "3",
+              "name": "Wagyu-ribeye",
+              "description": "A5 Wagyu -naudanlihaa paahdettujen juuresten ja punaviinikastikkeen kanssa.",
+              "price": "$85"
+            }
+          ]
+        },
+        {
+          "key": "desserts",
+          "label": "Jälkiruoat",
+          "items": [
+            {
+              "id": "4",
+              "name": "Dekonstruoitu sitruunatorttu",
+              "description": "Raikas sitruunacurd, voinen murupohja ja paahdettu marenki.",
+              "price": "$16"
+            }
+          ]
+        },
+        {
+          "key": "wines",
+          "label": "Viinit",
+          "items": []
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Visuaalinen matka",
+      "title": "Galleria",
+      "follow": "Seuraa tarinaamme",
+      "instagramHandle": "@LumiereGastronomy",
+      "categories": [
+        { "key": "all", "label": "Kaikki" },
+        { "key": "dishes", "label": "Annokset" },
+        { "key": "ambiance", "label": "Tunnelma" },
+        { "key": "kitchen", "label": "Keittiö" }
+      ],
+      "images": [
+        { "id": "1", "alt": "Cocktail kaadetaan lasiin", "category": "ambiance" },
+        { "id": "2", "alt": "Elegantti ruokasali", "category": "ambiance" },
+        { "id": "3", "alt": "Kokki viimeistelee annoksen", "category": "kitchen" },
+        { "id": "4", "alt": "Grillattu pihvi", "category": "dishes" },
+        { "id": "5", "alt": "Lähikuva jälkiruoasta", "category": "dishes" },
+        { "id": "6", "alt": "Ravintolan ulkonäkymä", "category": "ambiance" }
+      ]
+    },
+    "blog": {
+      "eyebrow": "Kulinaristiset tarinat",
+      "title": "Keittiömestarin pöytä",
+      "description": "Näkemyksiä keittiöstämme, sesongin reseptejä ja kurkistus gastronomian taiteeseen kulissien takaa.",
+      "readMore": "Lue koko tarina",
+      "newsletter": {
+        "title": "Liity sisäpiiriin",
+        "description": "Tilaa uutiskirje saadaksesi eksklusiivisia reseptejä, ennakkopääsyn sesonkimenuisiin ja kutsuja yksityisiin tasting-tilaisuuksiin.",
+        "placeholder": "Sähköpostiosoitteesi",
+        "button": "Tilaa"
+      },
+      "posts": [
+        {
+          "id": "1",
+          "title": "Täydellisen risoton salaisuus",
+          "excerpt": "Keittiömestari Julian jakaa kolme kultaista sääntöä, joilla saavutat aina kermaisen ja samettisen koostumuksen.",
+          "author": "Keittiömestari Julian Rossi",
+          "date": "10. huhtikuuta 2026",
+          "category": "Resepti"
+        },
+        {
+          "id": "2",
+          "title": "Kevään sato: uusi sesonkimenu",
+          "excerpt": "Tutustu tuoreisiin raaka-aineisiin ja elinvoimaisiin makuihin, jotka saapuvat Lumièreen tällä kaudella.",
+          "author": "Elena Vance",
+          "date": "5. huhtikuuta 2026",
+          "category": "Uutiset"
+        }
+      ]
+    },
+    "events": {
+      "eyebrow": "Eksklusiiviset kokoontumiset",
+      "title": "Tapahtumat ja yksityistilaisuudet",
+      "description": "Intiimeistä juhlista yritysgaaloihin tarjoamme täydellisen ympäristön ikimuistoisimmille hetkille.",
+      "sapphire": {
+        "title": "Sapphire Room",
+        "description": "Ensiluokkainen yksityinen ruokailutilamme, Sapphire Room, tarjoaa täydellisen rauhan jopa 20 vieraalle. Tilassa on oma palvelutiimi, mittatilaustyönä valmistettu mahonkipöytä sekä integroidut audiovisuaaliset ratkaisut.",
+        "button": "Tee tiedustelu",
+        "quote": "Yksityisyyden huippua.",
+        "imageAlt": "Yksityinen ruokailutila",
+        "features": ["Kapasiteetti: 12–20 vierasta", "Oma sommelier", "Räätälöity soittolista"]
+      },
+      "grand": {
+        "title": "Suuret tilaisuudet",
+        "description": "Suurempiin juhliin Lumière Gastronomy on varattavissa kokonaan yksityiskäyttöön. Voimme vastaanottaa jopa 120 vierasta istuvaan illalliseen tai 200 vierasta cocktailtilaisuuteen.",
+        "button": "Katso tapahtumaesite",
+        "imageAlt": "Ravintolan yksityisvaraus",
+        "cards": [
+          { "title": "Häät", "description": "Elegantit seremonia- ja juhlatilaisuudet" },
+          { "title": "Yritystilaisuudet", "description": "Lanseraukset ja gaalat" }
+        ]
+      },
+      "testimonial": {
+        "quote": "Lumière Gastronomy järjesti yritysgaalamme, ja huomio yksityiskohtiin oli vailla vertaa. Ruoka, palvelu ja tunnelma olivat kaikki maailmanluokkaa.",
+        "name": "Sarah Jenkins",
+        "role": "Global Events Director, Sdr Tech"
+      }
+    },
+    "contact": {
+      "eyebrow": "Ota yhteyttä",
+      "title": "Yhteystiedot",
+      "description": "Olipa sinulla kysymys menustamme, haluat varata yksityistapahtuman tai vain tervehtiä, kuulisimme sinusta mielellämme.",
+      "sections": {
+        "location": "Sijainti",
+        "phone": "Puhelin",
+        "email": "Sähköposti",
+        "hours": "Aukioloajat"
+      },
+      "details": {
+        "address": "Lansikatu, Joensuu-80100",
+        "phones": ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+        "emails": ["hello@lumiere.com", "events@lumiere.com"],
+        "hours": "Ma - Su: 17.00 - 23.00",
+        "mapAlt": "Karttanäkymä",
+        "mapCta": "Avaa Google Mapsissa"
+      },
+      "form": {
+        "title": "Lähetä viesti",
+        "nameLabel": "Koko nimi",
+        "namePlaceholder": "Matti Meikäläinen",
+        "emailLabel": "Sähköpostiosoite",
+        "emailPlaceholder": "matti@example.com",
+        "subjectLabel": "Aihe",
+        "subjectOptions": ["Yleinen tiedustelu", "Pöytävaraus", "Yksityistilaisuus", "Työmahdollisuudet"],
+        "messageLabel": "Viesti",
+        "messagePlaceholder": "Kuinka voimme auttaa sinua?",
+        "button": "Lähetä viesti"
+      }
+    },
+    "footer": {
+      "description": "Luomme unohtumattomia kulinaristisia hetkiä käsityöläisotteella ja kauden parhaista raaka-aineista.",
+      "quickLinks": "Pikalinkit",
+      "menu": "Menu",
+      "gallery": "Galleria",
+      "blog": "Keittiömestarin blogi",
+      "events": "Yksityistilaisuudet",
+      "hours": "Aukioloajat",
+      "location": "Sijainti",
+      "schedule": [
+        { "day": "Ma - To", "time": "17.00 - 22.00" },
+        { "day": "Pe - La", "time": "17.00 - 23.30" },
+        { "day": "Sunnuntai", "time": "12.00 - 21.00" }
+      ],
+      "address": "Lansikatu\nJoensuu-80100",
+      "phone": "+1 (555) 123-4567",
+      "email": "reservations@lumiere.com",
+      "copyright": "© 2026 Lumière Gastronomy. Kaikki oikeudet pidätetään."
+    },
+    "ai": {
+      "systemPrompt": "Olet Lumière Gastronomyn tekoälyconcierge. Tavoitteesi on auttaa vieraita ravintolaa koskevissa tiedoissa ja pöytävarauksissa. Ravintolan tiedot: - Nimi: Lumière Gastronomy - Keittiö: moderni ranskalainen / artisaanityyli - Sijainti: Lansikatu, Joensuu-80100 - Tunnusannokset: tryffelirisotto, paistetut kampasimpukat, Wagyu-ribeye. - Aukioloajat: ma-to 17-22, pe-la 17-23.30, su 12-21. - Varaukset: otamme varauksia enintään 10 henkilön seurueille. - Pukukoodi: smart casual / formal. Kun käyttäjä haluaa tehdä varauksen: 1. Kysy päivämäärä ja aika. 2. Kysy vieraiden määrä. 3. Kysy nimi ja yhteystiedot. 4. Vahvista tiedot (simuloidusti). Ole elegantti, ammattimainen ja lämmin. Käytä hienostunutta kieltä.",
+      "notConfigured": "AI-conciergeä ei ole vielä määritetty. Lisää `VITE_OPENROUTER_API_KEY` ympäristömuuttujiin.",
+      "processingError": "Pahoittelen, en pysty käsittelemään pyyntöä juuri nyt.",
+      "resting": "Pahoittelut, olen tällä hetkellä levossa. Yritä myöhemmin uudelleen.",
+      "title": "Lumière Concierge",
+      "subtitle": "Aina palveluksessasi",
+      "welcome": "Tervetuloa Lumière Gastronomyyn. Kuinka voin auttaa ruokailuelämyksessäsi tänään?",
+      "placeholder": "Kysy varauksista tai menusta...",
+      "open": "Avaa AI-concierge",
+      "close": "Sulje AI-concierge"
+    }
+  }
+}
