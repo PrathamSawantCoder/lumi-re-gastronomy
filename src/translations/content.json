@@ -219,6 +219,7 @@
       },
       "form": {
         "title": "Send a Message",
+        "accessKeyMissing": "The contact form is not configured yet. Add `VITE_WEB3FORMS_ACCESS_KEY` to your environment variables.",
         "nameLabel": "Full Name",
         "namePlaceholder": "John Doe",
         "emailLabel": "Email Address",
@@ -227,7 +228,10 @@
         "subjectOptions": ["General Inquiry", "Table Reservation", "Private Event", "Career Opportunities"],
         "messageLabel": "Message",
         "messagePlaceholder": "How can we help you?",
-        "button": "Send Message"
+        "button": "Send Message",
+        "sending": "Sending...",
+        "success": "Your message has been sent successfully.",
+        "error": "Something went wrong while sending your message. Please try again."
       }
     },
     "footer": {
@@ -486,6 +490,7 @@
       },
       "form": {
         "title": "Lähetä viesti",
+        "accessKeyMissing": "Yhteydenottolomaketta ei ole vielä määritetty. Lisää `VITE_WEB3FORMS_ACCESS_KEY` ympäristömuuttujiin.",
         "nameLabel": "Koko nimi",
         "namePlaceholder": "Matti Meikäläinen",
         "emailLabel": "Sähköpostiosoite",
@@ -494,7 +499,10 @@
         "subjectOptions": ["Yleinen tiedustelu", "Pöytävaraus", "Yksityistilaisuus", "Työmahdollisuudet"],
         "messageLabel": "Viesti",
         "messagePlaceholder": "Kuinka voimme auttaa sinua?",
-        "button": "Lähetä viesti"
+        "button": "Lähetä viesti",
+        "sending": "Lähetetään...",
+        "success": "Viestisi lähetettiin onnistuneesti.",
+        "error": "Viestin lähetyksessä tapahtui virhe. Yritä uudelleen."
       }
     },
     "footer": {
