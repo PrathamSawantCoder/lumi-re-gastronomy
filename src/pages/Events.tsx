@@ -1,9 +1,12 @@
 import { motion } from 'motion/react';
 import { Users, GlassWater, Music, Camera, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import {useNavigate } from 'react-router';
 
 export default function Events() {
   const { t } = useLanguage();
+  const navigate = useNavigate();
+
   const events = t<{
     eyebrow: string;
     title: string;
@@ -53,7 +56,7 @@ export default function Events() {
                 </li>
               ))}
             </ul>
-            <button className="px-10 py-4 bg-gold text-midnight font-bold uppercase tracking-widest text-xs hover:bg-gold-light transition-colors">
+            <button className="px-10 py-4 bg-gold text-midnight font-bold uppercase tracking-widest text-xs hover:bg-gold-light transition-colors cursor-pointer" onClick={() => navigate('/contact')}>
               {events.sapphire.button}
             </button>
           </div>

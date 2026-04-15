@@ -1,8 +1,8 @@
 {
   "en": {
     "meta": {
-      "siteName": "Lumière Gastronomy",
-      "brand": "PRAADA"
+      "siteName": "Lumière",
+      "brand": "Lumière"
     },
     "navbar": {
       "links": [
@@ -45,7 +45,7 @@
         "eyebrow": "The Experience",
         "titleLineOne": "A Sanctuary for the",
         "titleAccent": "Modern Epicurean",
-        "description": "At Praada, we believe dining is more than just a meal—it's a sensory journey. From the soft glow of our ambient lighting to the meticulous plating of every dish, we've designed every detail to transport you to a world of refined elegance.",
+        "description": "At Lumière Gastronomy, we believe dining is more than just a meal—it's a sensory journey. From the soft glow of our ambient lighting to the meticulous plating of every dish, we've designed every detail to transport you to a world of refined elegance.",
         "imageAlt": "Ambiance",
         "features": [
           { "title": "Michelin Quality", "description": "Excellence in every bite" },
@@ -262,10 +262,14 @@
       "close": "Close AI concierge"
     }
   },
+
+
+
+
   "fi": {
     "meta": {
-      "siteName": "Lumière Gastronomy",
-      "brand": "PRAADA"
+      "siteName": "Lumière",
+      "brand": "Lumière"
     },
     "navbar": {
       "links": [
@@ -294,7 +298,7 @@
         "titleLineOne": "Kulinaristinen taide",
         "titleAccent": "uudelleenmääriteltynä",
         "description": "Koe makujen sinfonia, jossa perinne kohtaa innovaation kaupungin sydämessä.",
-        "primaryCta": "Tutustu menuun",
+        "primaryCta": "Tutustu ruokalistaan",
         "secondaryCta": "Varaa pöytä",
         "scroll": "Vieritä",
         "heroAlt": "Pääkuva"
@@ -308,7 +312,7 @@
         "eyebrow": "Elämys",
         "titleLineOne": "Turvapaikka",
         "titleAccent": "modernille herkkusuulle",
-        "description": "Praadassa uskomme, että ruokailu on enemmän kuin ateria — se on aistillinen matka. Pehmeästä tunnelmavalaistuksesta jokaisen annoksen huolelliseen esillepanoon, jokainen yksityiskohta on suunniteltu viemään sinut hienostuneen eleganssin maailmaan.",
+        "description": "Lumière Gastronomiassa uskomme, että ruokailu on enemmän kuin ateria — se on aistillinen matka. Pehmeästä tunnelmavalaistuksesta jokaisen annoksen huolelliseen esillepanoon, jokainen yksityiskohta on suunniteltu viemään sinut hienostuneen eleganssin maailmaan.",
         "imageAlt": "Tunnelma",
         "features": [
           { "title": "Michelin-taso", "description": "Erinomaisuutta jokaisessa suupalassa" },
@@ -326,7 +330,7 @@
     },
     "menuPage": {
       "eyebrow": "Valikoima",
-      "title": "Menumme",
+      "title": "Ruokalista",
       "description": "Huolella kuratoitu kokoelma kulinaristisia mestariteoksia, valmistettuna intohimolla ja tarkkuudella.",
       "emptyCategory": "Sesongin valikoima tulossa pian...",
       "wine": {

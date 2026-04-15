@@ -117,7 +117,7 @@ export default function AIAgent() {
                   <p className="text-[10px] text-white/50 uppercase tracking-widest">{subtitle}</p>
                 </div>
               </div>
-              <button onClick={() => setIsOpen(false)} aria-label={close} className="text-white/50 hover:text-white transition-colors">
+              <button onClick={() => setIsOpen(false)} aria-label={close} className="text-white/50 hover:text-white transition-colors cursor-pointer">
                 <X size={20} />
               </button>
             </div>
@@ -131,7 +131,7 @@ export default function AIAgent() {
               )}
               {messages.map((m, i) => (
                 <div key={i} className={cn('flex gap-3', m.role === 'user' ? 'flex-row-reverse' : 'flex-row')}>
-                  <div className={cn('w-8 h-8 rounded-full flex items-center justify-center border shrink-0', m.role === 'user' ? 'bg-white/10 border-white/20' : 'bg-gold/10 border-gold/30')}>
+                  <div className={cn('w-8 h-8 rounded-full flex items-center justify-center border shrink-0', m.role === 'user' ? 'bg-white/10 border-white/20' : 'bg-gold/10 border-gold/30 ')}>
                     {m.role === 'user' ? <User size={14} /> : <Bot size={14} className="text-gold" />}
                   </div>
                   <div className={cn('max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed', m.role === 'user' ? 'bg-white/5 text-white' : 'bg-gold/5 text-white/90')}>
@@ -170,7 +170,7 @@ export default function AIAgent() {
                 <button
                   onClick={handleSend}
                   disabled={isLoading || !input.trim()}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gold disabled:opacity-30 transition-opacity"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-gold disabled:opacity-30 transition-opacity cursor-pointer"
                 >
                   <Send size={18} />
                 </button>
@@ -183,7 +183,7 @@ export default function AIAgent() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? close : open}
-        className="w-16 h-16 rounded-full bg-gold shadow-2xl flex items-center justify-center text-midnight hover:scale-110 transition-transform active:scale-95 group relative"
+        className="w-16 h-16 rounded-full bg-gold shadow-2xl flex items-center justify-center text-midnight hover:scale-110 transition-transform active:scale-95 group relative cursor-pointer"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
